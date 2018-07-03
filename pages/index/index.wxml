@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='tip_box'>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+      </block>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='left_box'>
+      <scroll-view scroll-y class="scroll_box;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+        <view class='title_view' wx:for="{{article}}" wx:for-index="idx" wx:for-item="itemName" bindtap="to_content"  data-id='{{idx}}' >{{itemName.title}}</view>
+      </scroll-view>
+    </view>
+    <view class='right_box'>
+      <view class="rich-text-wrp">
+        <rich-text nodes="{{html}}"></rich-text>
+      </view>
+    </view>
+  </view>
+</view>

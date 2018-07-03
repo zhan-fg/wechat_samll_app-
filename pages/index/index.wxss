@@ -1,0 +1,62 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userinfo-avatar {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+.tip_box{
+  position:relative;
+    width: 750rpx;
+    height: 110rpx;
+    max-width: 100%;
+    background-color:	#FFFFFF;
+    top:0rpx;
+    left:0rpx;
+    border:6rpx ;
+}
+.box{
+  position:relative;
+  height: 1100rpx;
+  width: 750rpx;
+  max-width: 100%;
+  top:8rpx;
+  margin-left: 0rpx;
+  background-color:	#F0F0F0;
+  border:6rpx ;
+}
+.left_box{
+  position:absolute;
+  height: 1100rpx;
+  width: 160rpx;
+  max-height: 100%;
+  
+  margin-left: 0rpx;
+  background-color:	#F0F0F0;
+  
+}
+.title_view{
+  background-color:	#FFFFFF;
+  height: 100rpx;
+  width: 150rpx;
+  margin-top: 2rpx;
+  
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+}
+.right_box{
+  position:relative;
+  height: 1100rpx;
+  width: 550rpx;
+  max-height: 100%;
+
+  left: 180rpx;
+  background-color:	#FFFFFF;
+}
